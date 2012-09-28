@@ -1,0 +1,13 @@
+README
+setup.cfg
+setup.py
+ucdavis/__init__.py
+ucdavis.sumrtax.egg-info/PKG-INFO
+ucdavis.sumrtax.egg-info/SOURCES.txt
+ucdavis.sumrtax.egg-info/dependency_links.txt
+ucdavis.sumrtax.egg-info/entry_points.txt
+ucdavis.sumrtax.egg-info/namespace_packages.txt
+ucdavis.sumrtax.egg-info/not-zip-safe
+ucdavis.sumrtax.egg-info/requires.txt
+ucdavis.sumrtax.egg-info/top_level.txt
+ucdavis/sumrtax/__init__.py

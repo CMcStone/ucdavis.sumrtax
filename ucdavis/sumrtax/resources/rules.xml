@@ -1,0 +1,45 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+    <!-- Head: title -->
+    <replace content="/html/head/title" theme="/html/head/title" />
+    <!-- Base tag -->
+    <replace content="/html/head/base" theme="/html/head/base" />
+    <!-- meta tag -->
+    <replace content="/html/head/meta" theme="/html/head/meta" />
+   <!-- Drop styles in the head - these are added back by including them from Plone -->
+    <!--
+    <drop theme="/html/head/link" />
+    <drop theme="/html/head/style" />
+    -->
+    <!-- Pull in Plone CSS -->
+    <prepend content="/html/head/link | /html/head/style " theme="/html/head"/>
+    <!--before content='/html/head' theme='/html/head' /-->
+	<!-- Pull in Plone JS -->
+	    <after content="/html/head/script" theme="/html/head"/>
+	 <!-- Replace Logo and Title --> 
+	 <!--copy css:theme="#logo" css:content="portal-logo" /-->
+	 <replace css:theme-children="#logo h3">
+	        <xsl:for-each css:select="a#portal-logo">
+	          <xsl:value-of select="@title" />
+	        </xsl:for-each>
+	    </replace>
+	 
+	        <!-- Body class -->
+    <copy attributes="class" css:theme="body" css:content="body"/>
+    <!-- Pull in global navigation menu-->
+    <copy content='//*[@id="portal-globalnav"]' theme='//*[@id="portal-globalnav-1"]' />
+    <!-- Pull in personal tools -->
+    <prepend content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="dept-name"]' />
+    
+    <!--Searchbox  -->
+    <copy content='//*[@id="portal-searchbox"]' theme='//*[@id="ucd-search"]' />
+     
+   
+ 
+    
+
+</rules>
