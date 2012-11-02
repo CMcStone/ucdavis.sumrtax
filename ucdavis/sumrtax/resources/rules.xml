@@ -3,11 +3,16 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+    <theme href="index2.html" css:if-content="#visual-portal-wrapper" />
     <!-- Head: title -->
-    <replace content="/html/head/title" theme="/html/head/title" />
-    <!-- Base tag -->
-    <replace content="/html/head/base" theme="/html/head/base" />
+	  <replace theme="/html/head/title" content="/html/head/title" />
+
+	  <!-- Base tag -->
+	  <append theme="/html/head" content="/html/head/base" />
+
+	  <!-- Body -->
+	  <prepend theme="/html/body" content="/html/body/attribute::class" />
+	
     <!-- meta tag -->
     <replace content="/html/head/meta" theme="/html/head/meta" />
    <!-- Drop styles in the head - these are added back by including them from Plone -->
@@ -22,22 +27,29 @@
 	    <after content="/html/head/script" theme="/html/head"/>
 	 <!-- Replace Logo and Title --> 
 	 <!--copy css:theme="#logo" css:content="portal-logo" /-->
-	 <replace css:theme-children="#logo h3">
+	
+	<append attributes="href title" css:content="#portal-logo" css:theme="#logo" />
+	 <!--replace css:theme-children="#title">
 	        <xsl:for-each css:select="a#portal-logo">
 	          <xsl:value-of select="@title" />
 	        </xsl:for-each>
-	    </replace>
-	 
+	    </replace-->
+     
 	        <!-- Body class -->
     <copy attributes="class" css:theme="body" css:content="body"/>
+    
     <!-- Pull in global navigation menu-->
-    <copy content='//*[@id="portal-globalnav"]' theme='//*[@id="portal-globalnav-1"]' />
+    <!--copy content='//*[@id="portal-globalnav"]' theme='//*[@id="portal-globalnav"]' /-->
+    <replace theme='//*[@id="portal-globalnav-1"]' content='//*[@id="portal-globalnav"]' />
     <!-- Pull in personal tools -->
     <prepend content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="dept-name"]' />
+    <replace theme='//*[@id="page"]' content='//*[@id="portal-columns"]' />
     
     <!--Searchbox  -->
     <copy content='//*[@id="portal-searchbox"]' theme='//*[@id="ucd-search"]' />
-     
+    
+    
+    
    
  
     
