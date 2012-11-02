@@ -310,7 +310,7 @@ a.discreet span span {
   color: #000000;
 }
 
-#portal-column-one {
+#portal-column-oneA {
   float: left;
   background-color: #CCDBD8;
   width:  14.4em;
@@ -341,11 +341,11 @@ a.discreet span span {
   text-decoration: none;
 }
 
-#portal-column-one  {
+#portal-column-oneA  {
   padding: 0em;
 }
 
-#portal-column-one .visualPadding {
+#portal-column-oneA .visualPadding {
   padding: 2.9em 0em 1em 0em; 
 }
 
