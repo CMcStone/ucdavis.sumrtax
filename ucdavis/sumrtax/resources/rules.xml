@@ -42,7 +42,7 @@
     <!--copy content='//*[@id="portal-globalnav"]' theme='//*[@id="portal-globalnav"]' /-->
     <replace theme='//*[@id="portal-globalnav-1"]' content='//*[@id="portal-globalnav"]' />
     <!-- Pull in personal tools -->
-    <prepend content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="dept-name"]' />
+    <prepend content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="logo"]' />
     <replace theme='//*[@id="page"]' content='//*[@id="portal-columns"]' />
     
     <!--Searchbox  -->

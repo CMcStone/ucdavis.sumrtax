@@ -82,6 +82,9 @@ a.discreet span span {
   padding: 0;
   margin: 0;
   }
+#portal-header {
+	height: 40px;
+}
  
 #portal-logo {
   background: url(&dtml-portal_url;/&dtml-logoName;) no-repeat;
@@ -446,40 +449,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #portal-personaltools {
-  background-color: #CCCCCC;
-  padding: 0.4em 1em 0 0;
-  border-top: 0;
-  border-bottom: 0;
+float: right;
+background: #E3E3E3;
+position: relative;
+z-index: 10;
+line-height: 1em;
+right: 0;
+font-size: 40%;
+padding: 0;
 }
-
-#portal-personaltools ul {
-  background-color: #CCCCCC;
-  padding: 0.4em 1em 0 0;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-#portal-personaltools-wrapper ul {
-  background-color: #CCCCCC;
-  padding: 0.4em 0em 0 0;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-#portal-personaltools-wrapper li {
-  text-transform: none;
-  padding: 0 1em 0 0;
-  margin: 0;
-}
-
-#portal-personaltools li a {
-  color: #002666; 
-  border: 0;
-}
-
-#portal-personaltools li a:hover {
-  color: #77160B; 
-}	
 
 #region-content {
    padding:1em;
