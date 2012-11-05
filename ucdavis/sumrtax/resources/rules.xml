@@ -43,7 +43,10 @@
     <replace theme='//*[@id="portal-globalnav-1"]' content='//*[@id="portal-globalnav"]' />
     <!-- Pull in personal tools -->
     <prepend content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="logo"]' />
+    <!--portal columns -->
     <replace theme='//*[@id="page"]' content='//*[@id="portal-columns"]' />
+    <!--footer-->
+    <replace theme='//*[@id="footer"]' content='//*[@id="footer"]' />
     
     <!--Searchbox  -->
     <copy content='//*[@id="portal-searchbox"]' theme='//*[@id="ucd-search"]' />
