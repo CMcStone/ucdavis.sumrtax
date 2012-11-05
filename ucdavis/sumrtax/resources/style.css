@@ -310,12 +310,19 @@ a.discreet span span {
   color: #000000;
 }
 
-#portal-column-oneA {
-  float: left;
+#portal-column-one {
+  
   background-color: #CCDBD8;
-  width:  14.4em;
-  padding: 0;
-  margin: 0;
+  
+}
+/*this over rides the left border */
+
+div.position-0 {
+margin-left: -100%;
+
+}
+div.position-1\:4 {
+margin-left: -77.6%;
 }
 
 #portal-footer {
