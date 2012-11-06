@@ -182,8 +182,8 @@ a.discreet span span {
   background-color: #99B7B1;
   padding: 0;
   font-size: 85%;
-  border-top: 1px solid #99B7B1;
-  border-bottom: 1px solid #99B7B1E;
+/*  border-top: 1px solid #4C8077; */
+  border-bottom: 1px solid #4C8077;
   height: 2.1em;
   list-style: none;
   margin: 0;
@@ -193,6 +193,8 @@ a.discreet span span {
 
 #portal-globalnav-2 li {
   display: inline;
+  border-right: solid #4C8077;
+
 
 }
 
@@ -201,12 +203,10 @@ a.discreet span span {
   font-weight: bold;
   color: #000000;
   background-color: transparent;
+  border-right: solid .2em #4C8077;
   float: left;
   padding: 0 0.8em 0em 0.8em;    
   margin: 0;
-  border-color: #4C8077;
-  border-style: none &dtml-borderStyle; none none;
-  border-width: &dtml-borderWidth;;
   height: 2.1em;
   line-height: 2.1em;
   text-decoration: none;
@@ -216,13 +216,13 @@ a.discreet span span {
 #portal-globalnav-2 li a:hover {
   background-color: #80A49E;
   color: #77160B;
-  border-color: #4C8077;
+/*  border-color: #4C8077; */
 }
 
 #portal-globalnav-2 li.selected a {
   background-color: #80A49E;
-  border-color: #4C8077;
-  border-style: none &dtml-borderStyle; none none;
+/*  border-color: #4C8077;
+  border-style: none &dtml-borderStyle; none none; */
   color: #000000;
 }
 
@@ -236,7 +236,7 @@ a.discreet span span {
   background-color: #ACB8C3;
   padding: 0;
   border-top: 1px solid #6D8297;
-  border-bottom: 1px solid #002666;
+  border-bottom: 1px solid #BF9900;
   height: 2.1em;
   list-style: none;
   margin: 0;
@@ -260,25 +260,23 @@ a.discreet span span {
   float: left;
   padding: 0 0.8em 0em 0.8em;
   margin: 0;
-  border-color: #8294A6;
-  border-style: none &dtml-borderStyle; none none;
-  border-width: &dtml-borderWidth;;
+  border-right: solid #8294A6;
+  border-bottom: solid 1px #BF9900;
   height: 2.1em;
   line-height: 2.1em;
   text-decoration: none;
-  text-transform: &dtml-textTransform;;
 }
 
 #portal-globalnav li a:hover {
   background-color: #97A6B4;
   color: #77160B;
-  border-color: #8294A6;
+ /* border-color: #8294A6; */
 }
 
 #portal-globalnav li.selected a {
   background-color: #97A6B4;
-  border-color: #8294A6;
-  border-style: none &dtml-borderStyle; none none;
+/*  border-color: #8294A6; 
+  border-style: none &dtml-borderStyle; none none; */
   color: #000000;
 }
 
@@ -455,7 +453,7 @@ position: relative;
 z-index: 10;
 line-height: 1em;
 right: 0;
-font-size: 40%;
+font-size: 30%;
 padding: 0;
 }
 
@@ -563,38 +561,13 @@ padding: 0;
   border-bottom: 1px solid #D2B84C;
 }
 
-#portlet-navigation-tree {
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-}
 
 .portletItem {
   border: 0;
   padding: 0;
+  color: #004A3D;
 }
 
-.navTreeItem a, dd.portletItem .navTreeItem {
-  margin: 0;
-  border: 0 !important;
-}
-
-.navTreeCurrentItem {
-  font-weight: bold;
-}
-
-.navTreeCurrentItemPublished {
-  font-weight: bold;
-  color: #000000 !important; 
-}
-
-.navTreeItem a {
-  padding: 0 0 0 14px;
-}
-
-.navTreeText {
-  padding-left: 5px;
-}
 
 #portlet-prefs {
   border: 0;
