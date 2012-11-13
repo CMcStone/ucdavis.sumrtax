@@ -156,6 +156,7 @@ a.discreet span span {
 #logo a {
   text-decoration: none;  
   border: 0;
+  color:#000;
 }
 
 #logo a:hover {
@@ -506,7 +507,7 @@ padding: 0;
   font-weight: bold;
   border-bottom: 0
 }
-dl.portlet {
+dl.portlet a {
 	color: #000;
 }
 dl.portlet p, dl.portlet {
