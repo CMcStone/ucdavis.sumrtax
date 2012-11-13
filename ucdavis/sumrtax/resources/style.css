@@ -236,9 +236,7 @@ a.discreet span span {
   line-height: normal;
   white-space: nowrap;
 
-  <dtml-if checkSecondTabRow>
-    border-bottom: 1px solid #BF9900;
-  </dtml-if>
+ 
 }
 
 #portal-globalnav li {
@@ -317,10 +315,20 @@ margin-left: -100%;
 
 }
 div.position-1\:4 {
-margin-left: -82%;
+margin-left: -80%;
 }
 div.width-1\:4 {
-width: 18%;
+width: 20%;
+}
+div.width-1\:2 {
+width: 60%;
+}
+
+div.position-3\:4 {
+margin-left: -20%;
+}
+div.width-3\:4 {
+width: 20%;
 }
 
 #portal-footer {
@@ -391,7 +399,8 @@ width: 18%;
 
 #quick-links li a:hover {
   background-color: #B2C9C5;
-  color: #77160B;
+  color: #E9CC66;
+  opacity: 0.7;
 }
 
 #ownership {
@@ -493,7 +502,7 @@ padding: 0;
 }*/
 
 .portletHeader a {
-  color: &dtml-linkColor; !important;
+  color: #000 !important;
   font-weight: bold;
   border-bottom: 0
 }
