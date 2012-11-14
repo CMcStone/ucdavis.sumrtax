@@ -404,11 +404,11 @@ width: 80ZZ0%;
 
 #quick-links li a:hover {
   background-color: #E9CC66;
-  color: #000 important!;
+  color: #000 !important;
   opacity: 0.7;
 }
 #quick-links a:selected {
-	color: #000 important!;
+	color: #000 !important;
 }
 
 #ownership {
@@ -522,7 +522,7 @@ color: #000;
 /*border-bottom: 0.1em solid #CCC;*/
 }
 dl.portlet a:hover {
- color: #000 important!;
+ color: #000 !important;
  background-color: #E5c44d;
  opacity:0.7;	
 }
