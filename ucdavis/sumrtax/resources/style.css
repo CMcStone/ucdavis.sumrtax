@@ -39,6 +39,10 @@ a.discreet {
 a.discreet span span {
   border-bottom: 1px solid #2F4D6A;
 }
+#content a:hover
+ {
+    color: #5d8a08 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+}
 
 .documentContent {
   color: #4C4C4C;
@@ -399,9 +403,12 @@ width: 80ZZ0%;
 }
 
 #quick-links li a:hover {
-  background-color: #B2C9C5;
-  color: #E9CC66;
+  background-color: #E9CC66;
+  color: #000;
   opacity: 0.7;
+}
+#quick-links a:selected {
+	color: #000;
 }
 
 #ownership {
@@ -478,16 +485,12 @@ padding: 0;
   color: Red !important;
 }
 
-.state-visible {
-  color: Black !important;
-}
-
-.state-published {
-  color: &dtml-linkColor; !important;
-}
 
 .state-pending {
   color: Red !important;
+}
+.state-published {
+   color: #000 !important;
 }
 
 .state-expired {
@@ -519,9 +522,9 @@ color: #000;
 /*border-bottom: 0.1em solid #CCC;*/
 }
 dl.portlet a:hover {
+ color: #000;
  background-color: #E5c44d;
- opacity:0.7;
- color: #000;	
+ opacity:0.7;	
 }
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
 line-height: 1.5em;
