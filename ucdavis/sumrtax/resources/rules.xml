@@ -50,6 +50,8 @@
     
     <!--Searchbox  -->
     <copy content='//*[@id="portal-searchbox"]' theme='//*[@id="ucd-search"]' />
+    <drop content='//*[@id="searchbox_currentfolder_only"]' />
+    <drop css:content="#portal-searchbox label" />
     
     
     

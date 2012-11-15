@@ -83,7 +83,8 @@ a.discreet span span {
 }
 #ucd_logo {
   position: relative;
-  padding: 0;
+  padding-top: 1px;
+  padding-left: 1px;
   margin-top: 0;
   }
 #portal-header {
@@ -131,7 +132,6 @@ a.discreet span span {
   margin: 1px 5px;
   padding: 0 0.5em 0 0;
   text-align: right;
-  text-transform: &dtml-textTransform;;
   white-space: nowrap;
   z-index: 2;
 }
