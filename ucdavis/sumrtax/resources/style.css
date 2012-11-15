@@ -536,6 +536,9 @@ line-height: 1.5em;
     padding-top: 0.2em;
     text-decoration: none;
 }
+.navTreeItem a:visited {
+	color: #000;
+}
 
 .portletFooter {
   border: 0 !important;
