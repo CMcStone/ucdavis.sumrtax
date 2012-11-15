@@ -510,7 +510,7 @@ padding: 0;
   font-weight: bold;
   border-bottom: 0
 }
-dl.portlet a {
+dl.portlet a:link {
 	color: #000;
 }
 dl.portlet p, dl.portlet {
@@ -529,16 +529,7 @@ dl.portlet a:hover {
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
 line-height: 1.5em;
 }
-.navTreeItem a, dd.portletItem .navTreeItem a {
-    border: 1px solid #FFFFFF;
-    display: block;
-    padding-bottom: 0.25em;
-    padding-top: 0.2em;
-    text-decoration: none;
-}
-.navTreeItem a:visited {
-	color: #000;
-}
+
 
 .portletFooter {
   border: 0 !important;
