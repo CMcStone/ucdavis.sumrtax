@@ -529,6 +529,13 @@ dl.portlet a:hover {
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
 line-height: 1.5em;
 }
+.navTreeItem a, dd.portletItem .navTreeItem a {
+    border: 1px solid #FFFFFF;
+    display: block;
+    padding-bottom: 0.25em;
+    padding-top: 0.2em;
+    text-decoration: none;
+}
 
 .portletFooter {
   border: 0 !important;
